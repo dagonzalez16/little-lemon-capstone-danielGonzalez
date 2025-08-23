@@ -1,12 +1,22 @@
+import restaurant_food from '../assets/restaurant_food.jpg'
+
 function Hero() {
     return (
         <>
-        <h1>Hero Section</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Dignissimos dolorem laborum nihil! Id labore corrupti voluptates eaque laborum.
-            Earum dolorum pariatur animi id rem suscipit dolorem sequi laboriosam ipsam qui?</p>
-        <button>Reserve a table</button>
-        <img src="#" alt="Visual representation of the restaurant"/>
+        <div className='hero'>
+             <div className='hero-text'>
+                <h1>Little Lemon</h1>
+                <h2>Chicago</h2>
+                <p>
+                    We are a family owned Mediterranean restaurant, focused on
+                    traditional recipes served with a modern twist.
+                </p>
+                <button className='btn-main'>Reserve a table</button>
+            </div>
+            <div className='hero-image'>
+                <img src={restaurant_food} alt="Visual representation of the restaurant" />
+            </div>
+        </div>
         </>
     );
 }

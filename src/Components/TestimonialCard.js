@@ -1,11 +1,17 @@
-function TestimonialCard() {
+function TestimonialCard(props) {
     return(
         <>
-        <article>
-            <h3>Rating ⭐⭐⭐⭐⭐</h3>
-            <img src="#" alt="Client" />
-            <h3>Name of the person</h3>
-            <p>Review</p>
+        <article className='testimonial'>
+            <div className='testimonialParent'>
+                <img src={props.pfp} alt="Client" />
+
+                <div className='testimonialChild'>
+                    <h3>{props.clientName}</h3>
+                    <h3>{props.rate}</h3>
+                </div>
+            </div>
+
+            <p>{props.review}</p>
         </article>
         </>
     );

@@ -1,10 +1,11 @@
+import logo from '../assets/header_logo.png';
+
 function Header() {
     return (
         <>
         <header>
-            <h1>Little Lemon Restaurant</h1>
+            <img src={logo} alt="Logo" />
             <nav>
-                <img src="#" alt="Logo" />
                 <ul>
                     <li>Home</li>
                     <li>About</li>

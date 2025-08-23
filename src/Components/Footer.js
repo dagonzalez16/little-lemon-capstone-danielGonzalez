@@ -1,3 +1,5 @@
+import logo from '../assets/footer_logo.png';
+
 function FooterLinks() {
   return (
     <div className="footerLinks">
@@ -40,7 +42,7 @@ function FooterSocialMedia() {
 function Footer() {
   return (
     <footer>
-        <img src="#" alt="Logo" />
+        <img src={logo} alt="Logo" />
         <FooterLinks />
         <FooterContact />
         <FooterSocialMedia />
